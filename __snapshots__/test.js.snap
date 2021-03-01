@@ -11,6 +11,579 @@ exports[`finds code and highlights 1`] = `
 </div>"
 `;
 
+exports[`handles newlines in code correctly 1`] = `
+"<div>
+    <p>foo</p>
+    <pre class=\\"language-typescript\\"><code class=\\"language-typescript{2}\\"><span class=\\"token keyword\\">interface</span> <span class=\\"token class-name\\"><span class=\\"token maybe-class-name\\">Thing</span></span> <span class=\\"token punctuation\\">{</span>
+<div class=\\"mdx-marker\\">a<span class=\\"token operator\\">:</span> <span class=\\"token builtin\\">number</span>
+</div><span class=\\"token punctuation\\">}</span>
+</code>
+    </pre>
+  </div>"
+`;
+
+exports[`handles newlines in code correctly 2`] = `
+Object {
+  "children": Array [
+    Object {
+      "children": Array [
+        Object {
+          "position": Object {
+            "end": Object {
+              "column": 5,
+              "line": 2,
+              "offset": 10,
+            },
+            "start": Object {
+              "column": 6,
+              "line": 1,
+              "offset": 5,
+            },
+          },
+          "type": "text",
+          "value": "
+    ",
+        },
+        Object {
+          "children": Array [
+            Object {
+              "position": Object {
+                "end": Object {
+                  "column": 11,
+                  "line": 2,
+                  "offset": 16,
+                },
+                "start": Object {
+                  "column": 8,
+                  "line": 2,
+                  "offset": 13,
+                },
+              },
+              "type": "text",
+              "value": "foo",
+            },
+          ],
+          "position": Object {
+            "end": Object {
+              "column": 15,
+              "line": 2,
+              "offset": 20,
+            },
+            "start": Object {
+              "column": 5,
+              "line": 2,
+              "offset": 10,
+            },
+          },
+          "properties": Object {},
+          "tagName": "p",
+          "type": "element",
+        },
+        Object {
+          "position": Object {
+            "end": Object {
+              "column": 5,
+              "line": 3,
+              "offset": 25,
+            },
+            "start": Object {
+              "column": 15,
+              "line": 2,
+              "offset": 20,
+            },
+          },
+          "type": "text",
+          "value": "
+    ",
+        },
+        Object {
+          "children": Array [
+            Object {
+              "children": Array [
+                Object {
+                  "children": Array [
+                    Object {
+                      "lineNumber": 1,
+                      "position": Object {
+                        "end": Object {
+                          "column": 38,
+                          "line": 1,
+                          "offset": 37,
+                        },
+                        "start": Object {
+                          "column": 29,
+                          "line": 1,
+                          "offset": 28,
+                        },
+                      },
+                      "type": "text",
+                      "value": "interface",
+                    },
+                  ],
+                  "lineNumber": 1,
+                  "position": Object {
+                    "end": Object {
+                      "column": 45,
+                      "line": 1,
+                      "offset": 44,
+                    },
+                    "start": Object {
+                      "column": 1,
+                      "line": 1,
+                      "offset": 0,
+                    },
+                  },
+                  "properties": Object {
+                    "className": Array [
+                      "token",
+                      "keyword",
+                    ],
+                  },
+                  "tagName": "span",
+                  "type": "element",
+                },
+                Object {
+                  "lineNumber": 1,
+                  "position": Object {
+                    "end": Object {
+                      "column": 46,
+                      "line": 1,
+                      "offset": 45,
+                    },
+                    "start": Object {
+                      "column": 45,
+                      "line": 1,
+                      "offset": 44,
+                    },
+                  },
+                  "type": "text",
+                  "value": " ",
+                },
+                Object {
+                  "children": Array [
+                    Object {
+                      "children": Array [
+                        Object {
+                          "lineNumber": 1,
+                          "position": Object {
+                            "end": Object {
+                              "column": 119,
+                              "line": 1,
+                              "offset": 118,
+                            },
+                            "start": Object {
+                              "column": 114,
+                              "line": 1,
+                              "offset": 113,
+                            },
+                          },
+                          "type": "text",
+                          "value": "Thing",
+                        },
+                      ],
+                      "lineNumber": 1,
+                      "position": Object {
+                        "end": Object {
+                          "column": 126,
+                          "line": 1,
+                          "offset": 125,
+                        },
+                        "start": Object {
+                          "column": 77,
+                          "line": 1,
+                          "offset": 76,
+                        },
+                      },
+                      "properties": Object {
+                        "className": Array [
+                          "token",
+                          "maybe-class-name",
+                        ],
+                      },
+                      "tagName": "span",
+                      "type": "element",
+                    },
+                  ],
+                  "lineNumber": 1,
+                  "position": Object {
+                    "end": Object {
+                      "column": 133,
+                      "line": 1,
+                      "offset": 132,
+                    },
+                    "start": Object {
+                      "column": 46,
+                      "line": 1,
+                      "offset": 45,
+                    },
+                  },
+                  "properties": Object {
+                    "className": Array [
+                      "token",
+                      "class-name",
+                    ],
+                  },
+                  "tagName": "span",
+                  "type": "element",
+                },
+                Object {
+                  "lineNumber": 1,
+                  "position": Object {
+                    "end": Object {
+                      "column": 134,
+                      "line": 1,
+                      "offset": 133,
+                    },
+                    "start": Object {
+                      "column": 133,
+                      "line": 1,
+                      "offset": 132,
+                    },
+                  },
+                  "type": "text",
+                  "value": " ",
+                },
+                Object {
+                  "children": Array [
+                    Object {
+                      "lineNumber": 1,
+                      "position": Object {
+                        "end": Object {
+                          "column": 167,
+                          "line": 1,
+                          "offset": 166,
+                        },
+                        "start": Object {
+                          "column": 166,
+                          "line": 1,
+                          "offset": 165,
+                        },
+                      },
+                      "type": "text",
+                      "value": "{",
+                    },
+                  ],
+                  "lineNumber": 1,
+                  "position": Object {
+                    "end": Object {
+                      "column": 174,
+                      "line": 1,
+                      "offset": 173,
+                    },
+                    "start": Object {
+                      "column": 134,
+                      "line": 1,
+                      "offset": 133,
+                    },
+                  },
+                  "properties": Object {
+                    "className": Array [
+                      "token",
+                      "punctuation",
+                    ],
+                  },
+                  "tagName": "span",
+                  "type": "element",
+                },
+                Object {
+                  "lineNumber": 1,
+                  "type": "text",
+                  "value": "
+",
+                },
+                Object {
+                  "children": Array [
+                    Object {
+                      "lineNumber": 2,
+                      "type": "text",
+                      "value": "a",
+                    },
+                    Object {
+                      "children": Array [
+                        Object {
+                          "lineNumber": 2,
+                          "position": Object {
+                            "end": Object {
+                              "column": 32,
+                              "line": 2,
+                              "offset": 205,
+                            },
+                            "start": Object {
+                              "column": 31,
+                              "line": 2,
+                              "offset": 204,
+                            },
+                          },
+                          "type": "text",
+                          "value": ":",
+                        },
+                      ],
+                      "lineNumber": 2,
+                      "position": Object {
+                        "end": Object {
+                          "column": 39,
+                          "line": 2,
+                          "offset": 212,
+                        },
+                        "start": Object {
+                          "column": 2,
+                          "line": 2,
+                          "offset": 175,
+                        },
+                      },
+                      "properties": Object {
+                        "className": Array [
+                          "token",
+                          "operator",
+                        ],
+                      },
+                      "tagName": "span",
+                      "type": "element",
+                    },
+                    Object {
+                      "lineNumber": 2,
+                      "position": Object {
+                        "end": Object {
+                          "column": 40,
+                          "line": 2,
+                          "offset": 213,
+                        },
+                        "start": Object {
+                          "column": 39,
+                          "line": 2,
+                          "offset": 212,
+                        },
+                      },
+                      "type": "text",
+                      "value": " ",
+                    },
+                    Object {
+                      "children": Array [
+                        Object {
+                          "lineNumber": 2,
+                          "position": Object {
+                            "end": Object {
+                              "column": 74,
+                              "line": 2,
+                              "offset": 247,
+                            },
+                            "start": Object {
+                              "column": 68,
+                              "line": 2,
+                              "offset": 241,
+                            },
+                          },
+                          "type": "text",
+                          "value": "number",
+                        },
+                      ],
+                      "lineNumber": 2,
+                      "position": Object {
+                        "end": Object {
+                          "column": 81,
+                          "line": 2,
+                          "offset": 254,
+                        },
+                        "start": Object {
+                          "column": 40,
+                          "line": 2,
+                          "offset": 213,
+                        },
+                      },
+                      "properties": Object {
+                        "className": Array [
+                          "token",
+                          "builtin",
+                        ],
+                      },
+                      "tagName": "span",
+                      "type": "element",
+                    },
+                    Object {
+                      "lineNumber": 2,
+                      "type": "text",
+                      "value": "
+",
+                    },
+                  ],
+                  "lineNumber": 2,
+                  "properties": Object {
+                    "className": "mdx-marker",
+                  },
+                  "tagName": "div",
+                  "type": "element",
+                },
+                Object {
+                  "lineNumber": 3,
+                  "type": "text",
+                  "value": "",
+                },
+                Object {
+                  "children": Array [
+                    Object {
+                      "lineNumber": 3,
+                      "position": Object {
+                        "end": Object {
+                          "column": 34,
+                          "line": 3,
+                          "offset": 288,
+                        },
+                        "start": Object {
+                          "column": 33,
+                          "line": 3,
+                          "offset": 287,
+                        },
+                      },
+                      "type": "text",
+                      "value": "}",
+                    },
+                  ],
+                  "lineNumber": 3,
+                  "position": Object {
+                    "end": Object {
+                      "column": 41,
+                      "line": 3,
+                      "offset": 295,
+                    },
+                    "start": Object {
+                      "column": 1,
+                      "line": 3,
+                      "offset": 255,
+                    },
+                  },
+                  "properties": Object {
+                    "className": Array [
+                      "token",
+                      "punctuation",
+                    ],
+                  },
+                  "tagName": "span",
+                  "type": "element",
+                },
+                Object {
+                  "lineNumber": 3,
+                  "type": "text",
+                  "value": "
+",
+                },
+                Object {
+                  "lineNumber": 4,
+                  "type": "text",
+                  "value": "",
+                },
+              ],
+              "position": Object {
+                "end": Object {
+                  "column": 8,
+                  "line": 6,
+                  "offset": 104,
+                },
+                "start": Object {
+                  "column": 10,
+                  "line": 3,
+                  "offset": 30,
+                },
+              },
+              "properties": Object {
+                "className": Array [
+                  "language-typescript{2}",
+                ],
+              },
+              "tagName": "code",
+              "type": "element",
+            },
+            Object {
+              "position": Object {
+                "end": Object {
+                  "column": 5,
+                  "line": 7,
+                  "offset": 109,
+                },
+                "start": Object {
+                  "column": 8,
+                  "line": 6,
+                  "offset": 104,
+                },
+              },
+              "type": "text",
+              "value": "
+    ",
+            },
+          ],
+          "position": Object {
+            "end": Object {
+              "column": 11,
+              "line": 7,
+              "offset": 115,
+            },
+            "start": Object {
+              "column": 5,
+              "line": 3,
+              "offset": 25,
+            },
+          },
+          "properties": Object {
+            "className": Array [
+              "language-typescript",
+            ],
+          },
+          "tagName": "pre",
+          "type": "element",
+        },
+        Object {
+          "position": Object {
+            "end": Object {
+              "column": 3,
+              "line": 8,
+              "offset": 118,
+            },
+            "start": Object {
+              "column": 11,
+              "line": 7,
+              "offset": 115,
+            },
+          },
+          "type": "text",
+          "value": "
+  ",
+        },
+      ],
+      "position": Object {
+        "end": Object {
+          "column": 9,
+          "line": 8,
+          "offset": 124,
+        },
+        "start": Object {
+          "column": 1,
+          "line": 1,
+          "offset": 0,
+        },
+      },
+      "properties": Object {},
+      "tagName": "div",
+      "type": "element",
+    },
+  ],
+  "data": Object {
+    "quirksMode": false,
+  },
+  "position": Object {
+    "end": Object {
+      "column": 9,
+      "line": 8,
+      "offset": 124,
+    },
+    "start": Object {
+      "column": 1,
+      "line": 1,
+      "offset": 0,
+    },
+  },
+  "type": "root",
+}
+`;
+
 exports[`handles uppercase languages correctly 1`] = `
 "<div>
   <p>foo</p>

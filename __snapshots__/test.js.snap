@@ -414,11 +414,6 @@ Object {
                   "type": "element",
                 },
                 Object {
-                  "lineNumber": 3,
-                  "type": "text",
-                  "value": "",
-                },
-                Object {
                   "children": Array [
                     Object {
                       "lineNumber": 3,
@@ -465,11 +460,6 @@ Object {
                   "type": "text",
                   "value": "
 ",
-                },
-                Object {
-                  "lineNumber": 4,
-                  "type": "text",
-                  "value": "",
                 },
               ],
               "position": Object {
